@@ -25,11 +25,11 @@ Using Named Entity Recognition (NER) there were no findings of significant polit
 ![](/visuals/language_freq.png)
 A quick look at the correlation matrix shows that there is not much significant positive or negative correlation between variables and the target variable. 
 ![](/visuals/correlation_matrix.png)
-Additionally there seems to be unexpected relationships between the sentiment scores and various variables. As the sentiment goes up one would expect school quality ratings to go up as well. The distribution of the data is much more scattered and random. This could indicate low predictability. ![](/visuals/compound_sqr_scores_dist.png) [COMPOUND SCORE]
+Additionally there seems to be unexpected relationships between the sentiment scores and various variables. As the sentiment goes up one would expect school quality ratings to go up as well. The distribution of the data is much more scattered and random. This could indicate low predictability. ![](/visuals/compound_sqr_scores_dist.png)
 
 ### Models
 Due to the lack of information seen in the distribution of word frequencies, TF-IDF vectorization was used. TF-IDF takes the product of the term frequency and the inverse document frequency to try to capture words that may be less common but may provide more contextual information. Random Forest, Naive Bayes, and LinearSVC classifiers were used as models. The models were evaluated using accuracy and F1 scores with a higher degree of emphasis placed on the F1 score using the "macro" hyperparameter (harmonic average of precision and recall). The reasoning was to have a more robust model since there is no particular reason a false positive would be more detrimental than a false negative. A dummy classifier with a test accuracy of 0.2105 and a test F1 score of 0.1234 was used as a baseline. All models performed above the baseline but produced testing accuracies with a range of around .23-.35 and F1 scores with a range of around .09-.18. The final model was a compromise of a smaller testing accuracy of 0.2995 but larger F1 score of 0.1826.
-![](/visuals/model_tracking.pdf)
+![](/visuals/model_tracking.png)
 
 ### Conclusion
 Currently the models are not production quality. This may have to do with preprocessing as well as the nature of the text itself. For future improvements XGBoost would be used to tune hyperparameters while stacking models would also be used to improve accuracy.  
