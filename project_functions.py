@@ -8,7 +8,7 @@ def check_for_string(data_frame, column_name, string):
     else:
         print("There are no instances.")
 
-def cleanText(data_frame, column_name:str):
+def cleanupText(data_frame, column_name:str):
     data_frame = data_frame
     # Remove numbers
     data_frame[column_name] = data_frame[column_name].str.replace(r'[0-9]', '')
