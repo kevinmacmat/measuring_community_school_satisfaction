@@ -21,7 +21,7 @@ def cleanText(data_frame, column_name:str):
     # Lowercase
     data_frame[column_name] = data_frame[column_name].str.lower()
 
-def nanCheck(column_index):
+def nanCheck(df, column_index):
     missing_count = []
     for x in df.iloc[:,column_index].isna():
         if x:
