@@ -7,21 +7,21 @@ Below is the project flow folders with included notebooks from gathering, prepro
 
 data_collection_&_cleaning
 
-    1) data_frame_cleaning.ipynb
+    1. data_frame_cleaning.ipynb
     
-    2) web_scraping.ipynb
+    2. web_scraping.ipynb
     
-    3) concat_dataframe.ipynb
+    3. concat_dataframe.ipynb
     
-    4) sentiment_analysis.ipynb
+    4. sentiment_analysis.ipynb
     
 eda
 
-    5) sqr_eda.ipynb
+    5. sqr_eda.ipynb
     
-    6) text_processing_eda.ipynb
+    6. text_processing_eda.ipynb
 
-7) modeling.ipynb
+7. modeling.ipynb
 
 ### Intro
 In the eternal debate about public education we often hear from official voices whereas the average parent or student can often feel out of the loop. Although school surveys exist, they have carefully crafted official questions that can feel very formal, and we know from research that people tend to rate things higher than they may truly feel. This project seeks to use Natural Language Processing and multiclass classification to supply the DOE a tool to analyze the strength of trust and ties families feel to the schools their children attend. Using comments to predict a "satisfaction" score can be used as a real time measurement to identify schools that may be prone to poor performance.  
@@ -42,7 +42,8 @@ A quick look at the correlation matrix shows that there is not much significant 
 
 ![](/visuals/correlation_matrix.png)
 
-Additionally there seems to be unexpected relationships between the sentiment scores and various variables. As the sentiment goes up one would expect school quality ratings to go up as well. The distribution of the data is much more scattered and random. 
+Additionally there seems to be unexpected relationships between the sentiment scores and various variables. As the sentiment goes up one would expect school quality ratings to go up as well. The distribution of the data is much more scattered and random.
+
 ![](/visuals/compound_sqr_scores_dist.png)
 
 ### Models
