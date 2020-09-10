@@ -1,4 +1,4 @@
-# capstone
+# Measuring Community & School Satisfaction
 
 ---
 
