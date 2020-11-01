@@ -1,5 +1,5 @@
-from random import randrange
-import pandas 
+# from random import randrange
+# import pandas 
 
 def check_for_string(data_frame, column_name, string):
     count = data_frame[column_name].str.contains(string).sum()
