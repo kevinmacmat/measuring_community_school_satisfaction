@@ -1,5 +1,4 @@
-# from random import randrange
-# import pandas 
+from random import randrange
 
 def check_for_string(data_frame, column_name, string):
     count = data_frame[column_name].str.contains(string).sum()
@@ -37,9 +36,8 @@ def nanCheck(df, column_index):
     
 def random_school(df):
     index = randrange(985)
-    print('School: ' + str(df.loc[index]['school_name']))
+    print('School: ' + str(df.loc[index]['dbn']))
     print('Borough: ' + str(df.loc[index]['borough']))
-    print('Average SQR Ratings: ' + str((df.loc[index]['fam_comm_ties_rating']+df.loc[index]['trust_rating'])/2))
     print('Compound: ' + str(df.loc[index]['compound']))
     print('Pct Positive: ' + str(df.loc[index]['pos']))
     print('Pct Neutral: ' + str(df.loc[index]['neu']))
